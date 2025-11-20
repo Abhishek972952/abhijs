@@ -38,18 +38,24 @@ let abhi=()=>{
 
  }
 
- let abhishek=()=>{
-   let text=document.querySelector('.inp').value
-   if(text %2==0){
-      alert(Number("even"))
-   }
+//  let abhishek=()=>{
+//    let text=document.querySelector('.inp').value
+//    if(text %2==0){
+//       alert(Number("even"))
+//    }
 
-   else{
-      alert(Number ("odd"))
+//    else{
+//       alert(Number ("odd"))
          
-   }
+//    }
 
-   
+   let changecolor=()=>{
+      let color=document.querySelector('#rx').value
+    let  ok=document.querySelector('#box')
+
+      ok.style.backgroundColor=color;
+      
+   }
     
- }
+ 
 

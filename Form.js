@@ -37,7 +37,7 @@ let vailid=()=>{
     else if(isNaN(num))
     {
         errnum.innerHTML="please enter only number"
-        errnum.style.color="blue"
+        errnum.style.color="red"
         return false
     }
 
@@ -47,7 +47,11 @@ let vailid=()=>{
         return false
     }
     
-    
+    else if(!(email.includes('@')  && email.includes('.com') ))
+    {
+        erremail.innerHTML="please enter vailid email"
+        return false
+    }
     
     else if(pass==""){
         errpass.innerHTML="please enter a password"
@@ -55,10 +59,23 @@ let vailid=()=>{
         return false
     }
 
+    else if(!(pass.match(/[1234567890]/) && pass.match(/[@#$%^&*]/) && pass.match(/[A-Z]/) && pass.match(/[a-z]/)))
+    {
+        errpass.innerHTML="please enter vailid pass"
+        return false
+    }
+
     else if(cpass==""){
         errcpass.innerHTML="please enter a cpassword"
         errcpass.style.innerHTML="blue"
         return false
+    }
+
+    else if(pass!=cpass)
+    {
+       errpass.innerHTML="please enter vailid cpass"
+       document.querySelector("#cpass").value=""
+       return false
     }
 
 

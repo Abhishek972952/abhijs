@@ -1,5 +1,5 @@
 
-//trim()
+//trim(),//.focus
 
 let vailid=()=>{
     let name=document.querySelector('#name').value.trim()
@@ -27,11 +27,28 @@ let vailid=()=>{
         return false
     }
 
+    else if(num.length!=10)
+    {
+      errnum.innerHTML="please enter vailid number"
+      errnum.style.color="blue"
+      return false
+    }
+
+    else if(isNaN(num))
+    {
+        errnum.innerHTML="please enter only number"
+        errnum.style.color="blue"
+        return false
+    }
+
     else if(email==""){
         erremail.innerHTML="please enter a email"
         erremail.style.color="red"
         return false
     }
+    
+    
+    
     else if(pass==""){
         errpass.innerHTML="please enter a password"
         errpass.style.color="red"
@@ -39,12 +56,15 @@ let vailid=()=>{
     }
 
     else if(cpass==""){
-        errcpass.innerHTML="please enter a cpasswors"
+        errcpass.innerHTML="please enter a cpassword"
         errcpass.style.innerHTML="blue"
         return false
     }
-    else {
 
+
+    
+    else {
+     
     }
 
 }

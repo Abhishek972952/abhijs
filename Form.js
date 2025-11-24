@@ -52,6 +52,7 @@ let vailid=()=>{
         erremail.innerHTML="please enter vailid email"
         return false
     }
+
     
     else if(pass==""){
         errpass.innerHTML="please enter a password"
@@ -62,9 +63,10 @@ let vailid=()=>{
     else if(!(pass.match(/[1234567890]/) && pass.match(/[@#$%^&*]/) && pass.match(/[A-Z]/) && pass.match(/[a-z]/)))
     {
         errpass.innerHTML="please enter vailid pass"
+        errpass.style.color="red"
         return false
     }
-
+    
     else if(cpass==""){
         errcpass.innerHTML="please enter a cpassword"
         errcpass.style.innerHTML="blue"
@@ -83,5 +85,13 @@ let vailid=()=>{
     else {
      
     }
+
+localStorage.setItem("num",name)   
+localStorage.setItem("number",num)   
+localStorage.setItem("email",email) 
+localStorage.setItem("pass",pass)   
+
+location.href=""
+return false
 
 }

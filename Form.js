@@ -1,7 +1,7 @@
 
 //trim(),//.focus
 
-let vailid=()=>{
+let signup=()=>{
     let name=document.querySelector('#name').value.trim()
     let num=document.querySelector('#num').value.trim()
     let email=document.querySelector('#email').value.trim()
@@ -86,12 +86,31 @@ let vailid=()=>{
      
     }
 
-localStorage.setItem("num",name)   
+localStorage.setItem("name",name)   
 localStorage.setItem("number",num)   
 localStorage.setItem("email",email) 
 localStorage.setItem("pass",pass)   
 
-location.href=""
+location.href="Login.html"
 return false
 
+}
+
+let login=()=>{
+    let loginname=document.querySelector('#loginname').value.trim()
+    let loginpass=document.querySelector('#loginpass').value.trim()
+
+    let localname=localStorage.getItem('name')
+    let localpass=localStorage.getItem('pass')
+
+    if(loginname==localname && localpass==loginpass)
+    {
+        location.href="home.html"
+        return false
+    }
+
+    else{
+        alert("Invailid credentials")
+        return false
+    }
 }

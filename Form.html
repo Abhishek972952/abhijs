@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
+
+    <style>
+     #box{
+        padding: 25px ;
+        margin: 10px 150px 150px  150px ;
+        background-color:red;
+     }
+
+    </style>
 </head>
 <body>
     
     <form>
-      
+      <div id="box">
     <p id="errname"></p>
      Enter Name: <input type="text" id="name"> <br> <br>
 
@@ -24,9 +35,9 @@
       <p id="errcpass"></p> 
      Enter Cpassword: <input type="text" id="cpass"> <br> <br>
 
-
-
     <input type="submit" value="sign up" onclick="return signup()">
+
+    </div>
 
 
     </form>

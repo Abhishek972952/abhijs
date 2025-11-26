@@ -37,10 +37,14 @@ let info=[ {
 ]
 
 let newdata=info.map((e)=>{
-    return e.name
+    return e
 })
 
 console.log(newdata)
+
+//find=>find vs filter
+//reduce
+//for of,for  in
 
 
  

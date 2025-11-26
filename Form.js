@@ -100,6 +100,7 @@ let login=()=>{
     let loginname=document.querySelector('#loginname').value.trim()
     let loginpass=document.querySelector('#loginpass').value.trim()
 
+
     let localname=localStorage.getItem('name')
     let localpass=localStorage.getItem('pass')
 
@@ -113,4 +114,5 @@ let login=()=>{
         alert("Invailid credentials")
         return false
     }
+    
 }

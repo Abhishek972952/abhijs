@@ -40,7 +40,7 @@ let newdata=info.map((e)=>{
     return e
 })
 
-console.log(newdata)
+console.log(newdata[1].age)
 
 //find=>find vs filter
 //reduce

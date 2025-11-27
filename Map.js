@@ -36,11 +36,35 @@ let info=[ {
 }
 ]
 
+
+
 let newdata=info.map((e)=>{
     return e
+
+
+
 })
 
+info.map((e)=>{
+
+
+
 console.log(newdata[1].age)
+
+let click=document.querySelector('#click')
+
+click.innerHTML+=`
+    <tr>
+
+    <td> ${e.name} </td>
+    <td> ${e.age} </td>
+    <td> ${e.city} </td>
+
+    </tr>
+
+`
+
+})
 
 //find=>find vs filter
 //reduce

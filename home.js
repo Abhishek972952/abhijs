@@ -1,4 +1,7 @@
 
+//  math,Date
+
+
 let getdata=async()=>{
 
 let api="https://jsonplaceholder.typicode.com/posts"

@@ -36,7 +36,7 @@ let abhi=()=>{
 
 
 
- }
+ 
 
 //  let abhishek=()=>{
 //    let text=document.querySelector('.inp').value
@@ -49,13 +49,29 @@ let abhi=()=>{
          
 //    }
 
-   let changecolor=()=>{
-      let color=document.querySelector('#rx').value
-    let  ok=document.querySelector('#box')
+   // let changecolor=()=>{
+   //    let color=document.querySelector('#rx').value
+   //  let  ok=document.querySelector('#box')
 
-      ok.style.backgroundColor=color;
+   //    ok.style.background=color;
+
+
+    let ok=document.querySelector('#click') 
+    if(ok.style.display=="block")
+    {
+      ok.inerHTML=
+    }
+
+    else
+    
+}
       
-   }
+   
+      
+
+   
+
+
     
  
 

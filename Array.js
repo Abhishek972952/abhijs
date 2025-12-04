@@ -1,8 +1,8 @@
  
-function abhi(){
+// function abhi(){
     
 
-     let math=[1,"avinash",6,5,"thor"]
+    //  let math=[1,"avinash",6,5,"thor"]
     // document.write(math)
 
     // document.write(math.length)
@@ -11,7 +11,7 @@ function abhi(){
     //pop ,push ,shift ,unshift
 
     // math.pop() //remove last element
-    console.log(math.push("AM")) //add element from back
+    //console.log(math.push("AM")) //add element from back
     // math.shift()
     // math.unshift("abhishek")
     // console.log(math)
@@ -36,9 +36,25 @@ function abhi(){
     //     name:'avinash',
     //      age:18 ,
     //      city:'bhopal' ,
-    }
+    
         //  console.log(mydata.name)
         //  mydata.fees=40000
+
+let arr=[1,2,6,3,6,8]  
+
+ let newarr=num.map((e)=>{
+    return e*e
+})
+
+console.log(newarr)
+
+let arr1=[1,2,6,3,9,8]  
+
+ let newarr1=arr1.filter((e)=>{
+    return e%2==0
+})
+
+console.log(newarr1)
          
     
 

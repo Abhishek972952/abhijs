@@ -40,13 +40,13 @@
         //  console.log(mydata.name)
         //  mydata.fees=40000
 
-let arr=[1,2,6,3,6,8]  
+// let arr=[1,2,6,3,6,8]  
 
- let newarr=num.map((e)=>{
-    return e*e
-})
+//  let newarr=num.map((e)=>{
+//     return e*e
+// })
 
-console.log(newarr)
+// console.log(newarr)
 
 let arr1=[1,2,6,3,9,8]  
 

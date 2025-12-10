@@ -24,6 +24,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    
 }
 
 
@@ -33,6 +34,8 @@ body{
     height: 18vmin;
     border-radius: 1rem;
     font-size: 50px;
+    background-color: beige;
+    color: brown;
 
 }
 

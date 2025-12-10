@@ -11,7 +11,7 @@
     
     
 
-     #box{
+     /* #box{
       border: 1px solid black;
       border-radius: 0%;
       width: 300px;
@@ -24,8 +24,84 @@
      #errname{
       color: aqua;
      }
+    
+    #show{
+      border-radius: 5%;
+    } 
+      */
 
-     
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+}
+
+#box{
+    width: 300px;
+    height: 550px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2); 
+}
+
+#box h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #333;
+}
+
+/* #box input[type="text"],
+#box input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s;
+} */
+
+#box input:focus{
+    border-color: #6a11cb;
+    box-shadow: 0px 0px 5px rgba(106,17,203,0.5);
+}
+
+#box p{
+    font-size: 8px;
+    margin: 0;
+    padding: 0;
+    height: 18px;   /* fixed space for error */
+}
+
+#box input[type="submit"]{
+    width: 100%;
+    padding: 12px;
+    background: #6a11cb;
+    border: none;
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 10px;
+    border-radius: 8px;
+    /* transition: 0.3s; */
+}
+
+#box input[type="submit"]:hover{
+    background: #2575fc;
+}
 
     </style>
 </head>
@@ -34,7 +110,7 @@
   <div id="show">
     
     <form >
-      <div id="box" border="1">
+      <div id="box">
 
         <h1>create Acount:</h1>
        

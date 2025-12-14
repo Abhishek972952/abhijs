@@ -1,4 +1,4 @@
-function avinash(){
+function abhi(){
   
     
 
@@ -48,4 +48,4 @@ else{
 
 }
 
-avinash
+abhi()
